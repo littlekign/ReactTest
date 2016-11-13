@@ -1,0 +1,6 @@
+this.props.x的传值，注意上下文的连接
+ 
+this.props.children直接可以把整个的组件当做数值进行传递，然后可以用map的方法进行遍历，传children的时候要在map里面进行说明
+arrs.map(this.props.children,function(arr,index){
+    return <p key={index}>{}</p>
+})
