@@ -4,3 +4,16 @@ this.props.children直接可以把整个的组件当做数值进行传递，然�
 arrs.map(this.props.children,function(arr,index){
     return <p key={index}>{arr}</p>
 })
+
+React自带的验证数据的方法
+   var data = 123;
+
+      var MyTitle = React.createClass({
+        propTypes: {
+          title: React.PropTypes.string.isRequired,
+        },
+
+        render: function() {
+          return <h1> {this.props.title} </h1>;
+        }
+      });
